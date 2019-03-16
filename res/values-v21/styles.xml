@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppBaseTheme" parent="@android:style/Theme.Material.Light" />
+    <style name="AppTheme" parent="@style/AppBaseTheme">
+        <item name="android:actionBarTheme">@style/StatusBarTheme</item>
+        <item name="android:colorPrimaryDark">#ffc0c0c0</item>
+        <item name="android:colorAccent">#ff4285f4</item>
+        <item name="android:navigationBarColor">#ff000000</item>
+    </style>
+    <style name="StatusBarTheme" parent="@android:style/Theme.Material.Light">
+        <item name="android:textColorPrimary">#ff4285f4</item>
+        <item name="android:textColorSecondary">#ff4285f4</item>
+        <item name="android:listDivider">@null</item>
+        <item name="android:colorPrimary">#fff5f5f5</item>
+        <item name="android:colorAccent">#ff4285f4</item>
+    </style>
+</resources>

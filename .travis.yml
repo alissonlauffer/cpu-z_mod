@@ -1,0 +1,10 @@
+dist: xenial
+language: java
+
+script:
+    - wget 'https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.4.0.jar' -O apktool.jar
+    - java -jar apktool.jar b . -o "CPU-Z_1.29_mod_`git rev-list --all --count`.apk"
+    - jarsigner -keystore alimods.keystore -storepass $KS_PASS "CPU-Z_1.29_mod_`git rev-list --all --count`.apk" $KS_NAME
+
+    - curl -F chat_id=$CHAT_ID -F document="@CPU-Z_1.29_mod_`git rev-list --all --count`.apk" -X POST "https://api.telegram.org/bot$TOKEN/sendDocument"
+    - curl -F chat_id=$CHAT_ID -F text="`git log -1`" -X GET "https://api.telegram.org/bot$TOKEN/sendMessage"

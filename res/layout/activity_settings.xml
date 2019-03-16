@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/setting_separator_1" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/setting_title" />
+    <TextView android:id="@id/setting_temperature" android:paddingLeft="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_temperature" android:layout_below="@id/setting_separator_1" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/radio_temperature_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/setting_temperature">
+        <RadioButton android:textSize="14.0sp" android:id="@id/radio_temperature_celsius" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temperature_celsius" android:onClick="onRadioButtonClick" />
+        <RadioButton android:textSize="14.0sp" android:id="@id/radio_temperature_fahrenheit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/temperature_fahrenheit" android:onClick="onRadioButtonClick" />
+    </RadioGroup>
+    <View android:id="@id/setting_separator_2" android:background="#bbbbbb" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/radio_temperature_unit" />
+    <TextView android:id="@id/setting_features" android:paddingLeft="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/setting_features" android:layout_below="@id/radio_temperature_unit" />
+    <CheckBox android:id="@id/chk_feature_GPU" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/chk_GPU" android:layout_below="@id/setting_features" />
+    <CheckBox android:id="@id/chk_feature_CPULoad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/chk_CPULoad" android:layout_below="@id/chk_feature_GPU" />
+    <CheckBox android:id="@id/chk_feature_Sensors" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/chk_Sensors" android:layout_below="@id/chk_feature_CPULoad" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/setting_save" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_save" android:layout_weight="1.0" />
+        <Button android:id="@id/setting_cancel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/setting_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

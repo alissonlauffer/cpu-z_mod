@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_page1">CPU &amp; GPU</string>
+    <string name="title_page2">Dispositivo</string>
+    <string name="title_page3">Sistema</string>
+    <string name="title_page4">Bateria</string>
+    <string name="title_page5">Temperaturas</string>
+    <string name="title_page6">Sensores</string>
+    <string name="title_page7">Sobre</string>
+    <string name="menu_close">Fechar</string>
+    <string name="about_text_2">para Android</string>
+    <string name="about_version">Versão</string>
+    <string name="about_text_1">CPUID CPU-Z é um software gratuito</string>
+    <string name="about_URL">Site CPUID</string>
+    <string name="about_URL_2">Validação por Canard PC Hardware</string>
+    <string name="about_send_dump">Enviar informações de Debug</string>
+    <string name="validate">Validação online</string>
+    <string name="setting_title">Configurações do CPU-Z</string>
+    <string name="setting_faq">Ajuda &amp; FAQ</string>
+    <string name="setting_removeads">¯\\_(ツ)_/¯</string>
+    <string name="setting_temperature">Unidade de temperatura</string>
+    <string name="setting_features">Recursos</string>
+    <string name="chk_GPU">GPU</string>
+    <string name="chk_CPULoad">CPU Load</string>
+    <string name="chk_Sensors">Sensores</string>
+    <string name="chk_BatteryExt">Capacidade da Bateria</string>
+    <string name="setting_save">Salvar</string>
+    <string name="setting_cancel">Cancelar</string>
+    <string name="temperature_celsius">Celsius</string>
+    <string name="temperature_fahrenheit">Fahrenheit</string>
+    <string name="copyright">Copyright © 2019 - CPUID - Todos os direitos reservados</string>
+</resources>

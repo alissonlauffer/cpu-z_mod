@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="cast_notification_id" />
+    <item type="id" name="view_pager" />
+    <item type="id" name="pager">false</item>
+    <item type="id" name="pager_header">false</item>
+    <item type="id" name="setting_title">false</item>
+    <item type="id" name="setting_separator_1">false</item>
+    <item type="id" name="setting_temperature">false</item>
+    <item type="id" name="radio_temperature_unit">false</item>
+    <item type="id" name="radio_temperature_celsius">false</item>
+    <item type="id" name="radio_temperature_fahrenheit">false</item>
+    <item type="id" name="setting_separator_2">false</item>
+    <item type="id" name="setting_features">false</item>
+    <item type="id" name="chk_feature_GPU">false</item>
+    <item type="id" name="chk_feature_CPULoad">false</item>
+    <item type="id" name="chk_feature_Sensors">false</item>
+    <item type="id" name="setting_save">false</item>
+    <item type="id" name="setting_cancel">false</item>
+    <item type="id" name="name">false</item>
+    <item type="id" name="description">false</item>
+    <item type="id" name="img">false</item>
+    <item type="id" name="about_title">false</item>
+    <item type="id" name="about_text_2">false</item>
+    <item type="id" name="about_version">false</item>
+    <item type="id" name="about_text_1">false</item>
+    <item type="id" name="about_validate">false</item>
+    <item type="id" name="about_setting">false</item>
+    <item type="id" name="about_faq">false</item>
+    <item type="id" name="about_removeads">false</item>
+    <item type="id" name="about_copyright">false</item>
+    <item type="id" name="about_URL_2">false</item>
+    <item type="id" name="about_URL">false</item>
+    <item type="id" name="group_button_2">false</item>
+    <item type="id" name="group_button_1">false</item>
+    <item type="id" name="menu_settings">false</item>
+    <item type="id" name="menu_validation">false</item>
+    <item type="id" name="menu_validation_2">false</item>
+    <item type="id" name="menu_debug">false</item>
+    <item type="id" name="menu_removeads">false</item>
+    <item type="id" name="menu_close">false</item>
+</resources>
