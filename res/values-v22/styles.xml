@@ -4,7 +4,7 @@
     <style name="AppTheme" parent="@style/AppBaseTheme">
         <item name="android:actionBarTheme">@style/StatusBarTheme</item>
         <item name="android:colorPrimaryDark">#ffe0e0e0</item>
-        <item name="android:colorAccent">#ff4285f4</item>
+        <item name="android:colorAccent">#ff1a73e8</item>
         <item name="android:navigationBarColor">#ffffffff</item>
         <item name="android:windowLightStatusBar">true</item>
         <item name="android:windowLightNavigationBar">true</item>

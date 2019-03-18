@@ -32,7 +32,7 @@
     <color name="wallet_link_text_light">#ff0000ee</color>
     <color name="grey">#fffafafa</color>
     <color name="darkgrey">#ff707070</color>
-    <color name="darkblue">#ff4285f4</color>
+    <color name="darkblue">#ff1a73e8</color>
     <color name="black">#ff000000</color>
-    <color name="mauve">#ff4285f4</color>
+    <color name="mauve">#ff1a73e8</color>
 </resources>

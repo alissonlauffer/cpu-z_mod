@@ -4,14 +4,14 @@
     <style name="AppTheme" parent="@style/AppBaseTheme">
         <item name="android:actionBarTheme">@style/StatusBarTheme</item>
         <item name="android:colorPrimaryDark">#ffc0c0c0</item>
-        <item name="android:colorAccent">#ff4285f4</item>
+        <item name="android:colorAccent">#ff1a73e8</item>
         <item name="android:navigationBarColor">#ff000000</item>
     </style>
     <style name="StatusBarTheme" parent="@android:style/Theme.Material.Light">
-        <item name="android:textColorPrimary">#ff4285f4</item>
-        <item name="android:textColorSecondary">#ff4285f4</item>
+        <item name="android:textColorPrimary">#ff1a73e8</item>
+        <item name="android:textColorSecondary">#ff1a73e8</item>
         <item name="android:listDivider">@null</item>
         <item name="android:colorPrimary">#fff5f5f5</item>
-        <item name="android:colorAccent">#ff4285f4</item>
+        <item name="android:colorAccent">#ff1a73e8</item>
     </style>
 </resources>
