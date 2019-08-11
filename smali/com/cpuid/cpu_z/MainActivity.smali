@@ -301,23 +301,23 @@
 
     iget-object v0, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
 
+    new-instance v1, Lcom/google/android/gms/ads/f;
+
+    invoke-direct {v1}, Lcom/google/android/gms/ads/f;-><init>()V
+
+    invoke-virtual {v1}, Lcom/google/android/gms/ads/f;->a()Lcom/google/android/gms/ads/d;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/k;->a(Lcom/google/android/gms/ads/d;)V
+
+    iget-object v0, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
+
     new-instance v1, Lcom/cpuid/cpu_z/d;
 
     invoke-direct {v1, p0}, Lcom/cpuid/cpu_z/d;-><init>(Lcom/cpuid/cpu_z/MainActivity;)V
 
     invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/k;->a(Lcom/google/android/gms/ads/a;)V
-
-    new-instance v0, Lcom/google/android/gms/ads/f;
-
-    invoke-direct {v0}, Lcom/google/android/gms/ads/f;-><init>()V
-
-    invoke-virtual {v0}, Lcom/google/android/gms/ads/f;->a()Lcom/google/android/gms/ads/d;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
-
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/k;->a(Lcom/google/android/gms/ads/d;)V
 
     goto :goto_0
 .end method

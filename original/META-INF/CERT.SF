@@ -1,5 +1,5 @@
 Signature-Version: 1.0
-SHA1-Digest-Manifest: szZtcwgmCdvd5fk1mFgsylzsBqE=
+SHA1-Digest-Manifest: MGRb8hRbyB75+K0ntS3riz9fLDQ=
 Created-By: 1.0 (Android)
 
 Name: res/drawable-hdpi/common_google_signin_btn_icon_light_pressed.9.
@@ -58,7 +58,7 @@ Name: res/drawable-mdpi/common_plus_signin_btn_icon_dark_normal.9.png
 SHA1-Digest: wMPhSQGPbz+GDF5n61Ns+3lPa0o=
 
 Name: lib/x86/libcpuid.so
-SHA1-Digest: WXbfEOvr/0czcAsPDCGlJ09+xts=
+SHA1-Digest: e4S9n+0KmpvaAa7M9Q/gsMe3mXs=
 
 Name: res/drawable-xhdpi/cast_ic_notification_on.png
 SHA1-Digest: 75Yl5zCXyZX1T/fhp9sBdjdXe/g=
@@ -117,7 +117,7 @@ Name: resources.arsc
 SHA1-Digest: GkpbXKvU2HuvKXVUwNKmtjGGdHA=
 
 Name: AndroidManifest.xml
-SHA1-Digest: kF/XaK7cGxEmBLAKfkuwa0UBd0w=
+SHA1-Digest: lqq515LP3uqDJyCgkufPbJ8/tCI=
 
 Name: res/drawable-mdpi/common_plus_signin_btn_text_dark_disabled.9.pn
  g
@@ -258,6 +258,9 @@ SHA1-Digest: wt3XQqIcDS7fIN0FZJb3zFauonc=
 Name: res/drawable/logo_rockchip.png
 SHA1-Digest: 4to0N74LQa3lvSO6jsxn+gGUZqI=
 
+Name: lib/x86_64/libcpuid.so
+SHA1-Digest: VpE674VfsBEbMz/wHLIqhAPRTAQ=
+
 Name: res/drawable-xxhdpi/cast_ic_notification_0.png
 SHA1-Digest: b0aq8SNjm/p8IzwUkWmRdGgKa68=
 
@@ -286,9 +289,6 @@ SHA1-Digest: uhZHMSpdapsueFm7pnvdDvemy9M=
 Name: res/drawable-mdpi/common_google_signin_btn_text_dark_disabled.9.
  png
 SHA1-Digest: DiCQMyKrQ7e3QlMvyimmf4NaxNY=
-
-Name: lib/armeabi/libcpuid.so
-SHA1-Digest: ZiHRABInjv5kQ4cwQDP4pCquCPE=
 
 Name: res/drawable-mdpi/common_plus_signin_btn_icon_light_disabled.9.p
  ng
@@ -363,9 +363,6 @@ SHA1-Digest: eptTlJlk/uSqzBWrWAXJPhAZKu4=
 
 Name: res/drawable-xxhdpi/ic_plusone_tall_off_client.png
 SHA1-Digest: KnGiAzVSp3asinpwsBKFZL0gnvQ=
-
-Name: lib/mips/libcpuid.so
-SHA1-Digest: 1n4spgcX5mT7/MobwxCpSoNxEVM=
 
 Name: res/drawable-xxhdpi/common_google_signin_btn_text_light_pressed.
  9.png
@@ -536,6 +533,9 @@ Name: res/drawable-tvdpi/common_plus_signin_btn_text_light_normal.9.pn
  g
 SHA1-Digest: io4LZ/ZaYJLmKkUSQX3MoV6dY84=
 
+Name: lib/arm64-v8a/libcpuid.so
+SHA1-Digest: lNXCnFUyp230LUW5yQ365rlQUcE=
+
 Name: res/layout/listitem3.xml
 SHA1-Digest: +GvUt3NWUROdNXvOdYSckjzfyBY=
 
@@ -567,6 +567,9 @@ SHA1-Digest: gdeuwi/nwdtMezUU9/6NYw0O28Q=
 
 Name: res/drawable-xxxhdpi/powered_by_google_light.png
 SHA1-Digest: MquTGs2uAKRj5VsPx+BMwmNAq+8=
+
+Name: lib/armeabi-v7a/libcpuid.so
+SHA1-Digest: h31axavHoXqBQTFjOsseoWBbNSM=
 
 Name: res/drawable-tvdpi/ic_plusone_tall_off_client.png
 SHA1-Digest: ZH/8Rx0fYOgxVSnyynNDf2ZCl+I=
@@ -944,5 +947,5 @@ Name: res/drawable-xhdpi/common_plus_signin_btn_text_light_focused.9.p
 SHA1-Digest: iBEbpPtaIWsV1YYkhvxDWJGvsuU=
 
 Name: classes.dex
-SHA1-Digest: +fL/T+rwC9er0W174koPPt4rLBY=
+SHA1-Digest: vartXDpddF7lTBAxNlUkx43Cz9o=
 

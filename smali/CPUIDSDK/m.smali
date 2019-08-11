@@ -1227,13 +1227,13 @@
 
     iget v3, v1, LCPUIDSDK/a;->b:I
 
-    if-ne v2, v3, :cond_fd
+    if-ne v2, v3, :cond_100
 
     iget v2, v10, LCPUIDSDK/a;->d:I
 
     iget v3, v1, LCPUIDSDK/a;->d:I
 
-    if-lt v2, v3, :cond_fc
+    if-lt v2, v3, :cond_ff
 
     iget-object v2, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
@@ -1429,7 +1429,7 @@
     :goto_4
     iget v7, p0, LCPUIDSDK/m;->a:I
 
-    if-lt v6, v7, :cond_fe
+    if-lt v6, v7, :cond_101
 
     iget-object v6, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
@@ -1468,9 +1468,9 @@
 
     aget-object v4, v4, v5
 
-    if-eqz v4, :cond_103
+    if-eqz v4, :cond_106
 
-    if-lez v3, :cond_102
+    if-lez v3, :cond_105
 
     iget-object v4, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
@@ -2736,15 +2736,15 @@
 
     invoke-direct {p0, v2, v9}, LCPUIDSDK/m;->a(Ljava/lang/String;LCPUIDSDK/l;)V
 
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6595"
+    const-string v11, "MT6595"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_88
+    if-eqz v4, :cond_88
 
     const/4 v1, 0x4
 
@@ -2758,165 +2758,165 @@
 
     invoke-direct {v1}, LCPUIDSDK/a;-><init>()V
 
-    iget v2, v10, LCPUIDSDK/a;->d:I
+    iget v4, v10, LCPUIDSDK/a;->d:I
 
-    const/16 v4, 0xc0e
+    const/16 v11, 0xc0e
 
-    if-ne v2, v4, :cond_87
+    if-ne v4, v11, :cond_87
 
-    const/16 v2, 0xc07
+    const/16 v4, 0xc07
 
-    iput v2, v1, LCPUIDSDK/a;->d:I
+    iput v4, v1, LCPUIDSDK/a;->d:I
 
-    const-string v2, "ARM Cortex-A7"
+    const-string v4, "ARM Cortex-A7"
 
-    iput-object v2, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
+    iput-object v4, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v4, 0x4
 
-    iput v2, v1, LCPUIDSDK/a;->f:I
+    iput v4, v1, LCPUIDSDK/a;->f:I
 
     :cond_47
     :goto_14
-    const-string v2, "bcm21553"
+    const-string v4, "bcm21553"
 
-    invoke-virtual {v5, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v5, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_48
+    if-eqz v4, :cond_48
 
-    const-string v2, "Broadcom BCM21553"
+    const-string v4, "Broadcom BCM21553"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/16 v2, 0x41
+    const/16 v4, 0x41
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     :cond_48
-    const-string v2, "capri"
+    const-string v4, "capri"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_93
+    if-eqz v4, :cond_93
 
-    const-string v2, "Broadcom BCM28155"
+    const-string v4, "Broadcom BCM28155"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/16 v2, 0x28
+    const/16 v4, 0x28
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     :cond_49
     :goto_15
-    const-string v2, "tuna"
+    const-string v4, "tuna"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_95
+    if-eqz v4, :cond_95
 
-    const-string v2, "TI OMAP 4460"
+    const-string v4, "TI OMAP 4460"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/4 v2, 0x7
+    const/4 v4, 0x7
 
-    iput v2, v9, LCPUIDSDK/l;->j:I
+    iput v4, v9, LCPUIDSDK/l;->j:I
 
-    const/16 v2, 0x2d
+    const/16 v4, 0x2d
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     :cond_4a
     :goto_16
-    const-string v2, "gt-i9100g"
+    const-string v4, "gt-i9100g"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_4b
+    if-nez v4, :cond_4b
 
-    const-string v2, "xt910"
+    const-string v4, "xt910"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_4c
+    if-eqz v4, :cond_4c
 
     :cond_4b
-    const-string v2, "TI OMAP 4430"
+    const-string v4, "TI OMAP 4430"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/4 v2, 0x7
+    const/4 v4, 0x7
 
-    iput v2, v9, LCPUIDSDK/l;->j:I
+    iput v4, v9, LCPUIDSDK/l;->j:I
 
-    const/16 v2, 0x2d
+    const/16 v4, 0x2d
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     :cond_4c
-    const-string v2, "montblanc"
+    const-string v4, "montblanc"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_4d
+    if-eqz v4, :cond_4d
 
-    const-string v2, "STE NovaThor U8500"
+    const-string v4, "STE NovaThor U8500"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/16 v2, 0x8
+    const/16 v4, 0x8
 
-    iput v2, v9, LCPUIDSDK/l;->j:I
+    iput v4, v9, LCPUIDSDK/l;->j:I
 
-    const/16 v2, 0x2d
+    const/16 v4, 0x2d
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     :cond_4d
-    const-string v2, "gt-i8190l"
+    const-string v4, "gt-i8190l"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_97
+    if-eqz v4, :cond_97
 
-    const-string v2, "STE NovaThor U8420"
+    const-string v4, "STE NovaThor U8420"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/16 v2, 0x8
+    const/16 v4, 0x8
 
-    iput v2, v9, LCPUIDSDK/l;->j:I
+    iput v4, v9, LCPUIDSDK/l;->j:I
 
-    const/16 v2, 0x2d
+    const/16 v4, 0x2d
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     :cond_4e
     :goto_17
-    const-string v2, "rk32sdk"
+    const-string v4, "rk3368"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_99
+    if-eqz v4, :cond_99
 
-    const-string v2, "Rockchip RK3288"
+    const-string v2, "Rockchip RK3368"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
@@ -2942,7 +2942,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_a0
+    if-eqz v4, :cond_a2
 
     const-string v4, "HiSilicon Kirin 955"
 
@@ -3050,7 +3050,7 @@
 
     const/16 v6, 0xd03
 
-    if-ne v4, v6, :cond_a2
+    if-ne v4, v6, :cond_a4
 
     const/16 v4, 0xd08
 
@@ -3093,7 +3093,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_a3
+    if-eqz v4, :cond_a5
 
     const-string v4, "HiSilicon Kirin 930"
 
@@ -3171,7 +3171,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_a4
+    if-eqz v4, :cond_a6
 
     :cond_5a
     const-string v4, "HiSilicon Kirin 920"
@@ -3190,7 +3190,7 @@
 
     const/16 v6, 0xc0f
 
-    if-ne v4, v6, :cond_a6
+    if-ne v4, v6, :cond_a8
 
     const/16 v4, 0xc07
 
@@ -3369,7 +3369,7 @@
 
     move-result v4
 
-    if-eqz v4, :cond_a7
+    if-eqz v4, :cond_a9
 
     :cond_64
     const-string v2, "HiSilicon Kirin 650"
@@ -3415,7 +3415,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_bb
+    if-eqz v2, :cond_bd
 
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
@@ -3436,13 +3436,13 @@
 
     const/4 v3, 0x4
 
-    if-ne v2, v3, :cond_b9
+    if-ne v2, v3, :cond_bb
 
     iget v2, v10, LCPUIDSDK/a;->c:I
 
     const/4 v3, 0x4
 
-    if-ne v2, v3, :cond_b6
+    if-ne v2, v3, :cond_b8
 
     const-string v2, "NVIDIA Tegra 4i"
 
@@ -4236,146 +4236,146 @@
     goto/16 :goto_13
 
     :cond_87
-    const/16 v2, 0xc0e
+    const/16 v4, 0xc0e
 
-    iput v2, v1, LCPUIDSDK/a;->d:I
+    iput v4, v1, LCPUIDSDK/a;->d:I
 
-    const-string v2, "ARM Cortex-A17"
+    const-string v4, "ARM Cortex-A17"
 
-    iput-object v2, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
+    iput-object v4, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v4, 0x4
 
-    iput v2, v1, LCPUIDSDK/a;->f:I
+    iput v4, v1, LCPUIDSDK/a;->f:I
 
     goto/16 :goto_14
 
     :cond_88
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/CT"
+    const-string v11, "MT6771V/CT"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_89
+    if-nez v4, :cond_89
 
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/WT"
+    const-string v11, "MT6771V/WT"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_8a
+    if-eqz v4, :cond_8a
 
     :cond_89
-    const-string v2, "MediaTek MT6771"
+    const-string v4, "MediaTek MT6771"
 
-    iput-object v2, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
 
-    const-string v2, "MediaTek Helio P70"
+    const-string v4, "MediaTek Helio P70"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto/16 :goto_14
 
     :cond_8a
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/CL"
+    const-string v11, "MT6771V/CL"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_8b
+    if-nez v4, :cond_8b
 
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/WL"
+    const-string v11, "MT6771V/WL"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_8c
+    if-eqz v4, :cond_8c
 
     :cond_8b
-    const-string v2, "MediaTek MT6771"
+    const-string v4, "MediaTek MT6771"
 
-    iput-object v2, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
 
-    const-string v2, "MediaTek Helio P70M"
+    const-string v4, "MediaTek Helio P70M"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto/16 :goto_14
 
     :cond_8c
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/C"
+    const-string v11, "MT6771V/C"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_8d
+    if-nez v4, :cond_8d
 
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/W"
+    const-string v11, "MT6771V/W"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_8d
+    if-nez v4, :cond_8d
 
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/WM"
+    const-string v11, "MT6771V/WM"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_8d
+    if-nez v4, :cond_8d
 
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6771V/CM"
+    const-string v11, "MT6771V/CM"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_8e
+    if-eqz v4, :cond_8e
 
     :cond_8d
-    const-string v2, "MediaTek MT6771"
+    const-string v4, "MediaTek MT6771"
 
-    iput-object v2, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
 
-    const-string v2, "MediaTek Helio P60"
+    const-string v4, "MediaTek Helio P60"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto/16 :goto_14
 
     :cond_8e
-    iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iget-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const-string v4, "MT6797"
+    const-string v11, "MT6797"
 
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v4, v11}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_47
+    if-eqz v4, :cond_47
 
     iget-object v0, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
@@ -4414,9 +4414,9 @@
 
     iget v0, v10, LCPUIDSDK/a;->d:I
 
-    const/16 v2, 0xd03
+    const/16 v4, 0xd03
 
-    if-ne v0, v2, :cond_92
+    if-ne v0, v4, :cond_92
 
     const/16 v0, 0xd08
 
@@ -4436,42 +4436,42 @@
 
     iget-object v0, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v4
 
     iget-object v0, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    aput-object v10, v0, v2
+    aput-object v10, v0, v4
 
     :goto_24
     new-instance v0, LCPUIDSDK/a;
 
     invoke-direct {v0}, LCPUIDSDK/a;-><init>()V
 
-    const/16 v2, 0xd03
+    const/16 v4, 0xd03
 
-    iput v2, v0, LCPUIDSDK/a;->d:I
+    iput v4, v0, LCPUIDSDK/a;->d:I
 
-    const-string v2, "ARM Cortex-A53"
+    const-string v4, "ARM Cortex-A53"
 
-    iput-object v2, v0, LCPUIDSDK/a;->i:Ljava/lang/String;
+    iput-object v4, v0, LCPUIDSDK/a;->i:Ljava/lang/String;
 
-    const/4 v2, 0x4
+    const/4 v4, 0x4
 
-    iput v2, v0, LCPUIDSDK/a;->f:I
+    iput v4, v0, LCPUIDSDK/a;->f:I
 
-    iget-object v2, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
+    iget-object v4, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
-    const/4 v4, 0x2
+    const/4 v11, 0x2
 
-    aput-object v0, v2, v4
+    aput-object v0, v4, v11
 
-    const/4 v2, 0x3
+    const/4 v4, 0x3
 
-    iput v2, v9, LCPUIDSDK/l;->p:I
+    iput v4, v9, LCPUIDSDK/l;->p:I
 
     goto/16 :goto_14
 
@@ -4535,152 +4535,184 @@
 
     iget-object v0, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
-    const/4 v2, 0x0
+    const/4 v4, 0x0
 
-    aput-object v10, v0, v2
+    aput-object v10, v0, v4
 
     iget-object v0, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
-    const/4 v2, 0x1
+    const/4 v4, 0x1
 
-    aput-object v1, v0, v2
+    aput-object v1, v0, v4
 
     goto :goto_24
 
     :cond_93
-    const-string v2, "rhea"
+    const-string v4, "rhea"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_94
+    if-eqz v4, :cond_94
 
-    const-string v2, "hammerhead"
+    const-string v4, "hammerhead"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_94
+    if-nez v4, :cond_94
 
-    const-string v2, "Broadcom BCM21654/G"
+    const-string v4, "Broadcom BCM21654/G"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/16 v2, 0x28
+    const/16 v4, 0x28
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     goto/16 :goto_15
 
     :cond_94
-    const-string v2, "hawaii"
+    const-string v4, "hawaii"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_49
+    if-eqz v4, :cond_49
 
-    const-string v2, "Broadcom BCM21664"
+    const-string v4, "Broadcom BCM21664"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/16 v2, 0x28
+    const/16 v4, 0x28
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     goto/16 :goto_15
 
     :cond_95
-    const-string v2, "piranha"
+    const-string v4, "piranha"
 
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_96
+    if-nez v4, :cond_96
 
-    const-string v2, "gt-i9100g"
+    const-string v4, "gt-i9100g"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_96
+    if-nez v4, :cond_96
 
-    const-string v2, "xt910"
+    const-string v4, "xt910"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_4a
+    if-eqz v4, :cond_4a
 
     :cond_96
-    const-string v2, "TI OMAP 4430"
+    const-string v4, "TI OMAP 4430"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/4 v2, 0x7
+    const/4 v4, 0x7
 
-    iput v2, v9, LCPUIDSDK/l;->j:I
+    iput v4, v9, LCPUIDSDK/l;->j:I
 
-    const/16 v2, 0x2d
+    const/16 v4, 0x2d
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     goto/16 :goto_16
 
     :cond_97
-    const-string v2, "gt-i8190"
+    const-string v4, "gt-i8190"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_98
+    if-nez v4, :cond_98
 
-    const-string v2, "gt-i9070p"
+    const-string v4, "gt-i9070p"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-nez v2, :cond_98
+    if-nez v4, :cond_98
 
-    const-string v2, "st25i"
+    const-string v4, "st25i"
 
-    invoke-virtual {v6, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v6, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
-    move-result v2
+    move-result v4
 
-    if-eqz v2, :cond_4e
+    if-eqz v4, :cond_4e
 
     :cond_98
-    const-string v2, "STE NovaThor U8500"
+    const-string v4, "STE NovaThor U8500"
 
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+    iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    const/16 v2, 0x8
+    const/16 v4, 0x8
 
-    iput v2, v9, LCPUIDSDK/l;->j:I
+    iput v4, v9, LCPUIDSDK/l;->j:I
 
-    const/16 v2, 0x2d
+    const/16 v4, 0x2d
 
-    iput v2, v9, LCPUIDSDK/l;->i:I
+    iput v4, v9, LCPUIDSDK/l;->i:I
 
     goto/16 :goto_17
 
     :cond_99
+    const-string v4, "rk32sdk"
+
+    invoke-virtual {v7, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_9a
+
+    const-string v4, "rk3288"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_9b
+
+    :cond_9a
+    const-string v2, "Rockchip RK3288"
+
+    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+
+    const/16 v2, 0xc
+
+    iput v2, v9, LCPUIDSDK/l;->j:I
+
+    const/16 v2, 0x1c
+
+    iput v2, v9, LCPUIDSDK/l;->i:I
+
+    goto/16 :goto_18
+
+    :cond_9b
     const-string v2, "rk31sdk"
 
     invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9b
+    if-eqz v2, :cond_9d
 
     const-string v2, "Rockchip RK31"
 
@@ -4698,13 +4730,13 @@
 
     const/4 v4, 0x4
 
-    if-ne v2, v4, :cond_9a
+    if-ne v2, v4, :cond_9c
 
     const-string v2, "Rockchip RK3188"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    :cond_9a
+    :cond_9c
     iget v2, v9, LCPUIDSDK/l;->h:I
 
     const/4 v4, 0x2
@@ -4717,14 +4749,14 @@
 
     goto/16 :goto_18
 
-    :cond_9b
+    :cond_9d
     const-string v2, "rk30sdk"
 
     invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9c
+    if-eqz v2, :cond_9e
 
     const-string v2, "Rockchip RK3066"
 
@@ -4756,14 +4788,14 @@
 
     goto/16 :goto_18
 
-    :cond_9c
+    :cond_9e
     const-string v2, "rk29sdk"
 
     invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9e
+    if-eqz v2, :cond_a0
 
     const-string v2, "Rockchip RK29"
 
@@ -4777,7 +4809,7 @@
 
     const/16 v4, 0xc08
 
-    if-ne v2, v4, :cond_9d
+    if-ne v2, v4, :cond_9f
 
     const-string v2, "Rockchip RK2928"
 
@@ -4789,7 +4821,7 @@
 
     goto/16 :goto_18
 
-    :cond_9d
+    :cond_9f
     iget v2, v10, LCPUIDSDK/a;->d:I
 
     const/16 v4, 0xc09
@@ -4806,14 +4838,14 @@
 
     goto/16 :goto_18
 
-    :cond_9e
+    :cond_a0
     const-string v2, "rk2928sdk"
 
     invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
-    if-eqz v2, :cond_9f
+    if-eqz v2, :cond_a1
 
     const-string v2, "Rockchip RK2928"
 
@@ -4829,7 +4861,7 @@
 
     goto/16 :goto_18
 
-    :cond_9f
+    :cond_a1
     const-string v2, "rk28sdk"
 
     invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -4848,14 +4880,14 @@
 
     goto/16 :goto_18
 
-    :cond_a0
+    :cond_a2
     const-string v4, "kirin 950"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_a1
+    if-eqz v4, :cond_a3
 
     const-string v4, "HiSilicon Kirin 950"
 
@@ -4875,7 +4907,7 @@
 
     goto/16 :goto_19
 
-    :cond_a1
+    :cond_a3
     const-string v4, "kirin 940"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
@@ -4902,7 +4934,7 @@
 
     goto/16 :goto_19
 
-    :cond_a2
+    :cond_a4
     const/16 v4, 0xd03
 
     iput v4, v1, LCPUIDSDK/a;->d:I
@@ -4921,21 +4953,21 @@
 
     goto/16 :goto_1a
 
-    :cond_a3
+    :cond_a5
     const-string v4, "HiSilicon Kirin 935"
 
     iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto/16 :goto_1b
 
-    :cond_a4
+    :cond_a6
     const-string v4, "kirin925"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
-    if-nez v4, :cond_a5
+    if-nez v4, :cond_a7
 
     const-string v4, "kirin 925"
 
@@ -4945,14 +4977,14 @@
 
     if-eqz v4, :cond_5b
 
-    :cond_a5
+    :cond_a7
     const-string v4, "HiSilicon Kirin 925"
 
     iput-object v4, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto/16 :goto_1c
 
-    :cond_a6
+    :cond_a8
     const/16 v4, 0xc0f
 
     iput v4, v1, LCPUIDSDK/a;->d:I
@@ -4963,14 +4995,14 @@
 
     goto/16 :goto_1d
 
-    :cond_a7
+    :cond_a9
     const-string v4, "BLL-"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-nez v4, :cond_a8
+    if-nez v4, :cond_aa
 
     const-string v4, "BLN-"
 
@@ -4978,7 +5010,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_a8
+    if-nez v4, :cond_aa
 
     const-string v4, "PRA-"
 
@@ -4986,9 +5018,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_a9
+    if-eqz v4, :cond_ab
 
-    :cond_a8
+    :cond_aa
     const-string v2, "HiSilicon Kirin 655"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5003,14 +5035,14 @@
 
     goto/16 :goto_1e
 
-    :cond_a9
+    :cond_ab
     const-string v4, "WAS-"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-eqz v4, :cond_aa
+    if-eqz v4, :cond_ac
 
     const-string v2, "HiSilicon Kirin 658"
 
@@ -5026,14 +5058,14 @@
 
     goto/16 :goto_1e
 
-    :cond_aa
+    :cond_ac
     const-string v4, "BAC-"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-nez v4, :cond_ab
+    if-nez v4, :cond_ad
 
     const-string v4, "FIG-"
 
@@ -5041,7 +5073,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_ab
+    if-nez v4, :cond_ad
 
     const-string v4, "LLD-"
 
@@ -5049,7 +5081,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_ab
+    if-nez v4, :cond_ad
 
     const-string v4, "PIC-"
 
@@ -5057,7 +5089,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_ab
+    if-nez v4, :cond_ad
 
     const-string v4, "RNE-"
 
@@ -5065,9 +5097,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_ac
+    if-eqz v4, :cond_ae
 
-    :cond_ab
+    :cond_ad
     const-string v2, "HiSilicon Kirin 659"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5082,14 +5114,14 @@
 
     goto/16 :goto_1e
 
-    :cond_ac
+    :cond_ae
     const-string v4, "GEM-701L"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
-    if-nez v4, :cond_ad
+    if-nez v4, :cond_af
 
     const-string v4, "GEM-702L"
 
@@ -5097,7 +5129,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_ad
+    if-nez v4, :cond_af
 
     const-string v4, "GEM-703L"
 
@@ -5105,9 +5137,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_ae
+    if-eqz v4, :cond_b0
 
-    :cond_ad
+    :cond_af
     const-string v2, "HiSilicon Kirin 935"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5122,14 +5154,14 @@
 
     goto/16 :goto_1e
 
-    :cond_ae
+    :cond_b0
     const-string v4, "BTV-"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-nez v4, :cond_af
+    if-nez v4, :cond_b1
 
     const-string v4, "FRD-"
 
@@ -5137,7 +5169,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_af
+    if-nez v4, :cond_b1
 
     const-string v4, "KNT-AL10"
 
@@ -5145,7 +5177,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_af
+    if-nez v4, :cond_b1
 
     const-string v4, "NXT-"
 
@@ -5153,9 +5185,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_b0
+    if-eqz v4, :cond_b2
 
-    :cond_af
+    :cond_b1
     const-string v2, "HiSilicon Kirin 950"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5170,14 +5202,14 @@
 
     goto/16 :goto_1e
 
-    :cond_b0
+    :cond_b2
     const-string v4, "EDI-"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-nez v4, :cond_b1
+    if-nez v4, :cond_b3
 
     const-string v4, "EVA-"
 
@@ -5185,7 +5217,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_b1
+    if-nez v4, :cond_b3
 
     const-string v4, "VIE-"
 
@@ -5193,7 +5225,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_b1
+    if-nez v4, :cond_b3
 
     const-string v4, "KNT-AL20"
 
@@ -5201,9 +5233,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_b2
+    if-eqz v4, :cond_b4
 
-    :cond_b1
+    :cond_b3
     const-string v2, "HiSilicon Kirin 955"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5218,14 +5250,14 @@
 
     goto/16 :goto_1e
 
-    :cond_b2
+    :cond_b4
     const-string v4, "DUK-"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-nez v4, :cond_b3
+    if-nez v4, :cond_b5
 
     const-string v4, "LON-"
 
@@ -5233,7 +5265,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_b3
+    if-nez v4, :cond_b5
 
     const-string v4, "MHA-"
 
@@ -5241,7 +5273,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_b3
+    if-nez v4, :cond_b5
 
     const-string v4, "STF-"
 
@@ -5249,7 +5281,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_b3
+    if-nez v4, :cond_b5
 
     const-string v4, "VKY-"
 
@@ -5257,7 +5289,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_b3
+    if-nez v4, :cond_b5
 
     const-string v4, "VTR-"
 
@@ -5265,9 +5297,9 @@
 
     move-result v4
 
-    if-eqz v4, :cond_b4
+    if-eqz v4, :cond_b6
 
-    :cond_b3
+    :cond_b5
     const-string v2, "HiSilicon Kirin 960"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5282,14 +5314,14 @@
 
     goto/16 :goto_1e
 
-    :cond_b4
+    :cond_b6
     const-string v4, "ALP-"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
-    if-nez v4, :cond_b5
+    if-nez v4, :cond_b7
 
     const-string v4, "BKL-"
 
@@ -5297,7 +5329,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_b5
+    if-nez v4, :cond_b7
 
     const-string v4, "BLA-"
 
@@ -5307,7 +5339,7 @@
 
     if-eqz v2, :cond_65
 
-    :cond_b5
+    :cond_b7
     const-string v2, "HiSilicon Kirin 970"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5322,7 +5354,7 @@
 
     goto/16 :goto_1e
 
-    :cond_b6
+    :cond_b8
     const-string v1, "NVIDIA Tegra 3"
 
     iput-object v1, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5363,7 +5395,7 @@
 
     const v3, 0x13d620
 
-    if-gt v2, v3, :cond_b7
+    if-gt v2, v3, :cond_b9
 
     iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
@@ -5389,12 +5421,12 @@
 
     goto/16 :goto_2
 
-    :cond_b7
+    :cond_b9
     iget v2, v10, LCPUIDSDK/a;->h:I
 
     const v3, 0x16e360
 
-    if-gt v2, v3, :cond_b8
+    if-gt v2, v3, :cond_ba
 
     iget-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
@@ -5420,7 +5452,7 @@
 
     goto/16 :goto_2
 
-    :cond_b8
+    :cond_ba
     iget v2, v10, LCPUIDSDK/a;->h:I
 
     const v3, 0x19f0a0
@@ -5451,7 +5483,7 @@
 
     goto/16 :goto_2
 
-    :cond_b9
+    :cond_bb
     const-string v2, "NVIDIA Tegra 2"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5467,7 +5499,7 @@
 
     const/4 v3, 0x3
 
-    if-ne v2, v3, :cond_ba
+    if-ne v2, v3, :cond_bc
 
     const-string v2, "NVIDIA Tegra K1"
 
@@ -5483,7 +5515,7 @@
 
     goto/16 :goto_2
 
-    :cond_ba
+    :cond_bc
     const-string v1, "NVIDIA Tegra 4"
 
     iput-object v1, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5518,7 +5550,7 @@
 
     goto/16 :goto_2
 
-    :cond_bb
+    :cond_bd
     iget-object v2, v9, LCPUIDSDK/l;->r:Ljava/lang/String;
 
     const-string v4, "Hisilicon"
@@ -5527,19 +5559,19 @@
 
     move-result v2
 
-    if-eqz v2, :cond_be
+    if-eqz v2, :cond_c0
 
     iget v2, v10, LCPUIDSDK/a;->d:I
 
     const/16 v3, 0xc09
 
-    if-ne v2, v3, :cond_bd
+    if-ne v2, v3, :cond_bf
 
     const-string v2, "HiSilicon K3V2"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    :cond_bc
+    :cond_be
     :goto_25
     const/16 v2, 0xf
 
@@ -5551,12 +5583,12 @@
 
     goto/16 :goto_2
 
-    :cond_bd
+    :cond_bf
     iget v2, v10, LCPUIDSDK/a;->d:I
 
     const/16 v3, 0xc0f
 
-    if-ne v2, v3, :cond_bc
+    if-ne v2, v3, :cond_be
 
     const-string v2, "HiSilicon K3V3"
 
@@ -5564,7 +5596,7 @@
 
     goto :goto_25
 
-    :cond_be
+    :cond_c0
     iget-object v2, v9, LCPUIDSDK/l;->r:Ljava/lang/String;
 
     const-string v4, "Qualcomm"
@@ -5583,7 +5615,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_bf
+    if-eqz v2, :cond_c1
 
     const-string v2, "Qualcomm Snapdragon 835"
 
@@ -5603,7 +5635,7 @@
 
     goto/16 :goto_2
 
-    :cond_bf
+    :cond_c1
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "530"
@@ -5612,7 +5644,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_c0
+    if-eqz v2, :cond_c2
 
     const-string v2, "Qualcomm Snapdragon 820"
 
@@ -5632,7 +5664,7 @@
 
     goto/16 :goto_2
 
-    :cond_c0
+    :cond_c2
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "510"
@@ -5641,13 +5673,13 @@
 
     move-result v2
 
-    if-eqz v2, :cond_c5
+    if-eqz v2, :cond_c7
 
     iget v2, v9, LCPUIDSDK/l;->h:I
 
     const/4 v3, 0x6
 
-    if-ne v2, v3, :cond_c3
+    if-ne v2, v3, :cond_c5
 
     const-string v1, "Qualcomm Snapdragon 650"
 
@@ -5656,78 +5688,6 @@
     const-string v1, "MSM8956"
 
     iput-object v1, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
-
-    const/4 v1, 0x2
-
-    iput v1, v9, LCPUIDSDK/l;->l:I
-
-    new-instance v1, LCPUIDSDK/a;
-
-    invoke-direct {v1}, LCPUIDSDK/a;-><init>()V
-
-    iget v2, v10, LCPUIDSDK/a;->d:I
-
-    const/16 v3, 0xd03
-
-    if-ne v2, v3, :cond_c2
-
-    const/16 v2, 0xd08
-
-    iput v2, v1, LCPUIDSDK/a;->d:I
-
-    const-string v2, "ARM Cortex-A72"
-
-    iput-object v2, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
-
-    const/4 v2, 0x2
-
-    iput v2, v1, LCPUIDSDK/a;->f:I
-
-    const/4 v2, 0x4
-
-    iput v2, v10, LCPUIDSDK/a;->f:I
-
-    :cond_c1
-    :goto_26
-    const/16 v2, 0x1c
-
-    iput v2, v9, LCPUIDSDK/l;->i:I
-
-    const/4 v2, 0x5
-
-    iput v2, v9, LCPUIDSDK/l;->j:I
-
-    goto/16 :goto_2
-
-    :cond_c2
-    const/16 v2, 0xd03
-
-    iput v2, v1, LCPUIDSDK/a;->d:I
-
-    const-string v2, "ARM Cortex-A53"
-
-    iput-object v2, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
-
-    const/4 v2, 0x4
-
-    iput v2, v1, LCPUIDSDK/a;->f:I
-
-    const/4 v2, 0x2
-
-    iput v2, v10, LCPUIDSDK/a;->f:I
-
-    goto :goto_26
-
-    :cond_c3
-    iget v2, v9, LCPUIDSDK/l;->h:I
-
-    const/16 v3, 0x8
-
-    if-ne v2, v3, :cond_c1
-
-    const-string v1, "Qualcomm Snapdragon 652"
-
-    iput-object v1, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -5751,6 +5711,78 @@
 
     iput-object v2, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
 
+    const/4 v2, 0x2
+
+    iput v2, v1, LCPUIDSDK/a;->f:I
+
+    const/4 v2, 0x4
+
+    iput v2, v10, LCPUIDSDK/a;->f:I
+
+    :cond_c3
+    :goto_26
+    const/16 v2, 0x1c
+
+    iput v2, v9, LCPUIDSDK/l;->i:I
+
+    const/4 v2, 0x5
+
+    iput v2, v9, LCPUIDSDK/l;->j:I
+
+    goto/16 :goto_2
+
+    :cond_c4
+    const/16 v2, 0xd03
+
+    iput v2, v1, LCPUIDSDK/a;->d:I
+
+    const-string v2, "ARM Cortex-A53"
+
+    iput-object v2, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
+
+    const/4 v2, 0x4
+
+    iput v2, v1, LCPUIDSDK/a;->f:I
+
+    const/4 v2, 0x2
+
+    iput v2, v10, LCPUIDSDK/a;->f:I
+
+    goto :goto_26
+
+    :cond_c5
+    iget v2, v9, LCPUIDSDK/l;->h:I
+
+    const/16 v3, 0x8
+
+    if-ne v2, v3, :cond_c3
+
+    const-string v1, "Qualcomm Snapdragon 652"
+
+    iput-object v1, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+
+    const/4 v1, 0x2
+
+    iput v1, v9, LCPUIDSDK/l;->l:I
+
+    new-instance v1, LCPUIDSDK/a;
+
+    invoke-direct {v1}, LCPUIDSDK/a;-><init>()V
+
+    iget v2, v10, LCPUIDSDK/a;->d:I
+
+    const/16 v3, 0xd03
+
+    if-ne v2, v3, :cond_c6
+
+    const/16 v2, 0xd08
+
+    iput v2, v1, LCPUIDSDK/a;->d:I
+
+    const-string v2, "ARM Cortex-A72"
+
+    iput-object v2, v1, LCPUIDSDK/a;->i:Ljava/lang/String;
+
     const/4 v2, 0x4
 
     iput v2, v1, LCPUIDSDK/a;->f:I
@@ -5761,7 +5793,7 @@
 
     goto :goto_26
 
-    :cond_c4
+    :cond_c6
     const/16 v2, 0xd03
 
     iput v2, v1, LCPUIDSDK/a;->d:I
@@ -5780,7 +5812,7 @@
 
     goto :goto_26
 
-    :cond_c5
+    :cond_c7
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "506"
@@ -5789,7 +5821,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_c9
+    if-eqz v2, :cond_cb
 
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
@@ -5803,13 +5835,13 @@
 
     move-result v2
 
-    if-eqz v2, :cond_c7
+    if-eqz v2, :cond_c9
 
     const-string v2, "Qualcomm Snapdragon 450"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    :cond_c6
+    :cond_c8
     :goto_27
     const/16 v2, 0xe
 
@@ -5821,7 +5853,7 @@
 
     goto/16 :goto_2
 
-    :cond_c7
+    :cond_c9
     const-string v2, "Qualcomm Snapdragon 625"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -5832,22 +5864,22 @@
 
     move-result v2
 
-    if-nez v2, :cond_c8
+    if-nez v2, :cond_ca
 
     iget v2, v10, LCPUIDSDK/a;->h:I
 
     const v3, 0x20ce70
 
-    if-lt v2, v3, :cond_c6
+    if-lt v2, v3, :cond_c8
 
-    :cond_c8
+    :cond_ca
     const-string v2, "Qualcomm Snapdragon 626"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto :goto_27
 
-    :cond_c9
+    :cond_cb
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "505"
@@ -5856,7 +5888,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_cb
+    if-eqz v2, :cond_cd
 
     const-string v2, "msm8937"
 
@@ -5864,7 +5896,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_ca
+    if-eqz v2, :cond_cc
 
     const-string v2, "Qualcomm Snapdragon 430"
 
@@ -5881,14 +5913,14 @@
 
     goto/16 :goto_2
 
-    :cond_ca
+    :cond_cc
     const-string v2, "Qualcomm Snapdragon 435"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto :goto_28
 
-    :cond_cb
+    :cond_cd
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "450"
@@ -5897,7 +5929,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_cc
+    if-eqz v2, :cond_ce
 
     const-string v2, "Qualcomm Snapdragon 815"
 
@@ -5913,7 +5945,7 @@
 
     goto/16 :goto_2
 
-    :cond_cc
+    :cond_ce
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "430"
@@ -5922,7 +5954,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_ce
+    if-eqz v2, :cond_d0
 
     const-string v1, "Qualcomm Snapdragon 810"
 
@@ -5940,7 +5972,7 @@
 
     const/16 v3, 0xd03
 
-    if-ne v2, v3, :cond_cd
+    if-ne v2, v3, :cond_cf
 
     const/16 v2, 0xd07
 
@@ -5969,7 +6001,7 @@
 
     goto/16 :goto_2
 
-    :cond_cd
+    :cond_cf
     const/16 v2, 0xd03
 
     iput v2, v1, LCPUIDSDK/a;->d:I
@@ -5988,7 +6020,7 @@
 
     goto :goto_29
 
-    :cond_ce
+    :cond_d0
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "420"
@@ -5997,7 +6029,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_cf
+    if-eqz v2, :cond_d1
 
     const-string v2, "Qualcomm Snapdragon 805"
 
@@ -6017,7 +6049,7 @@
 
     goto/16 :goto_2
 
-    :cond_cf
+    :cond_d1
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "418"
@@ -6026,7 +6058,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_d1
+    if-eqz v2, :cond_d3
 
     const-string v1, "Qualcomm Snapdragon 808"
 
@@ -6044,7 +6076,7 @@
 
     const/16 v3, 0xd03
 
-    if-ne v2, v3, :cond_d0
+    if-ne v2, v3, :cond_d2
 
     const/16 v2, 0xd07
 
@@ -6073,7 +6105,7 @@
 
     goto/16 :goto_2
 
-    :cond_d0
+    :cond_d2
     const/16 v2, 0xd03
 
     iput v2, v1, LCPUIDSDK/a;->d:I
@@ -6092,7 +6124,7 @@
 
     goto :goto_2a
 
-    :cond_d1
+    :cond_d3
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "405"
@@ -6101,13 +6133,13 @@
 
     move-result v2
 
-    if-eqz v2, :cond_d4
+    if-eqz v2, :cond_d6
 
     iget v2, v9, LCPUIDSDK/l;->h:I
 
     const/16 v3, 0x8
 
-    if-ne v2, v3, :cond_d3
+    if-ne v2, v3, :cond_d5
 
     const-string v1, "msm8952"
 
@@ -6115,7 +6147,7 @@
 
     move-result v1
 
-    if-eqz v1, :cond_d2
+    if-eqz v1, :cond_d4
 
     const-string v1, "Qualcomm Snapdragon 617"
 
@@ -6157,21 +6189,21 @@
 
     goto/16 :goto_2
 
-    :cond_d2
+    :cond_d4
     const-string v1, "Qualcomm Snapdragon 615"
 
     iput-object v1, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto :goto_2b
 
-    :cond_d3
+    :cond_d5
     const-string v2, "Qualcomm Snapdragon 610"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto :goto_2c
 
-    :cond_d4
+    :cond_d6
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "330"
@@ -6180,19 +6212,19 @@
 
     move-result v2
 
-    if-eqz v2, :cond_d6
+    if-eqz v2, :cond_d8
 
     iget v2, v10, LCPUIDSDK/a;->c:I
 
     const/4 v3, 0x2
 
-    if-ne v2, v3, :cond_d5
+    if-ne v2, v3, :cond_d7
 
     iget v2, v10, LCPUIDSDK/a;->e:I
 
     const/4 v3, 0x1
 
-    if-ne v2, v3, :cond_d5
+    if-ne v2, v3, :cond_d7
 
     const-string v2, "Qualcomm Snapdragon 801"
 
@@ -6213,14 +6245,14 @@
 
     goto/16 :goto_2
 
-    :cond_d5
+    :cond_d7
     const-string v2, "Qualcomm Snapdragon 800"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto :goto_2d
 
-    :cond_d6
+    :cond_d8
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "306"
@@ -6229,7 +6261,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_d7
+    if-eqz v2, :cond_d9
 
     const-string v2, "Qualcomm Snapdragon 400/410"
 
@@ -6245,7 +6277,7 @@
 
     goto/16 :goto_2
 
-    :cond_d7
+    :cond_d9
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "305"
@@ -6254,7 +6286,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_d8
+    if-eqz v2, :cond_da
 
     const-string v2, "Qualcomm Snapdragon 400"
 
@@ -6274,7 +6306,7 @@
 
     goto/16 :goto_2
 
-    :cond_d8
+    :cond_da
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "304"
@@ -6283,7 +6315,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_da
+    if-eqz v2, :cond_dc
 
     const-string v2, "msm8909"
 
@@ -6291,7 +6323,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_d9
+    if-eqz v2, :cond_db
 
     const-string v2, "Qualcomm Snapdragon 210/212"
 
@@ -6308,14 +6340,14 @@
 
     goto/16 :goto_2
 
-    :cond_d9
+    :cond_db
     const-string v2, "Qualcomm Snapdragon 205/208"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto :goto_2e
 
-    :cond_da
+    :cond_dc
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "203"
@@ -6324,7 +6356,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_db
+    if-eqz v2, :cond_dd
 
     const-string v2, "Qualcomm Snapdragon 200"
 
@@ -6340,7 +6372,7 @@
 
     goto/16 :goto_2
 
-    :cond_db
+    :cond_dd
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v3, "200"
@@ -6362,7 +6394,7 @@
 
     sparse-switch v2, :sswitch_data_3
 
-    :cond_dc
+    :cond_de
     :goto_2f
     const-string v2, "mahimahi"
 
@@ -6370,13 +6402,13 @@
 
     move-result v2
 
-    if-eqz v2, :cond_dd
+    if-eqz v2, :cond_df
 
     const-string v2, "QSD 8250"
 
     iput-object v2, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
 
-    :cond_dd
+    :cond_df
     iget-object v2, v9, LCPUIDSDK/l;->d:Ljava/lang/String;
 
     const-string v4, ""
@@ -6395,7 +6427,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_de
+    if-nez v4, :cond_e0
 
     const-string v4, "qct"
 
@@ -6403,7 +6435,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_de
+    if-nez v4, :cond_e0
 
     const-string v4, "msm"
 
@@ -6413,7 +6445,7 @@
 
     if-eqz v2, :cond_7
 
-    :cond_de
+    :cond_e0
     const-string v2, "(Flattened Device Tree)"
 
     const-string v4, ""
@@ -6467,7 +6499,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_df
+    if-eqz v2, :cond_e1
 
     const-string v2, "Qualcomm Snapdragon S2"
 
@@ -6479,7 +6511,7 @@
 
     goto :goto_2f
 
-    :cond_df
+    :cond_e1
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "225"
@@ -6488,7 +6520,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_e0
+    if-eqz v2, :cond_e2
 
     const-string v2, "Krait"
 
@@ -6508,7 +6540,7 @@
 
     goto/16 :goto_2f
 
-    :cond_e0
+    :cond_e2
     const-string v2, "Qualcomm Snapdragon S1"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -6532,7 +6564,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_e1
+    if-eqz v2, :cond_e3
 
     const-string v2, "Qualcomm Snapdragon S2"
 
@@ -6544,7 +6576,7 @@
 
     goto/16 :goto_2f
 
-    :cond_e1
+    :cond_e3
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "220"
@@ -6553,7 +6585,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_dc
+    if-eqz v2, :cond_de
 
     const-string v2, "Qualcomm Snapdragon S3"
 
@@ -6586,7 +6618,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_e2
+    if-eqz v2, :cond_e4
 
     const/16 v2, 0x2d
 
@@ -6594,7 +6626,7 @@
 
     goto/16 :goto_2f
 
-    :cond_e2
+    :cond_e4
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "225"
@@ -6603,7 +6635,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_e3
+    if-nez v2, :cond_e5
 
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
@@ -6613,7 +6645,7 @@
 
     move-result v2
 
-    if-nez v2, :cond_e3
+    if-nez v2, :cond_e5
 
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
@@ -6623,9 +6655,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_dc
+    if-eqz v2, :cond_de
 
-    :cond_e3
+    :cond_e5
     const/16 v2, 0x1c
 
     iput v2, v9, LCPUIDSDK/l;->i:I
@@ -6657,51 +6689,9 @@
 
     move-result v2
 
-    if-eqz v2, :cond_e4
-
-    const-string v2, "Qualcomm Snapdragon 810"
-
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
-
-    const-string v2, "Krait 450"
-
-    iput-object v2, v9, LCPUIDSDK/l;->e:Ljava/lang/String;
-
-    goto/16 :goto_2f
-
-    :cond_e4
-    iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
-
-    const-string v4, "420"
-
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_e5
-
-    const-string v2, "Qualcomm Snapdragon 805"
-
-    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
-
-    const-string v2, "Krait 450"
-
-    iput-object v2, v9, LCPUIDSDK/l;->e:Ljava/lang/String;
-
-    goto/16 :goto_2f
-
-    :cond_e5
-    iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
-
-    const-string v4, "418"
-
-    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
     if-eqz v2, :cond_e6
 
-    const-string v2, "Qualcomm Snapdragon 808"
+    const-string v2, "Qualcomm Snapdragon 810"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
@@ -6714,7 +6704,28 @@
     :cond_e6
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
-    const-string v4, "330"
+    const-string v4, "420"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_e7
+
+    const-string v2, "Qualcomm Snapdragon 805"
+
+    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+
+    const-string v2, "Krait 450"
+
+    iput-object v2, v9, LCPUIDSDK/l;->e:Ljava/lang/String;
+
+    goto/16 :goto_2f
+
+    :cond_e7
+    iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
+
+    const-string v4, "418"
 
     invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -6722,17 +6733,38 @@
 
     if-eqz v2, :cond_e8
 
+    const-string v2, "Qualcomm Snapdragon 808"
+
+    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+
+    const-string v2, "Krait 450"
+
+    iput-object v2, v9, LCPUIDSDK/l;->e:Ljava/lang/String;
+
+    goto/16 :goto_2f
+
+    :cond_e8
+    iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
+
+    const-string v4, "330"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_ea
+
     iget v2, v10, LCPUIDSDK/a;->c:I
 
     const/4 v4, 0x2
 
-    if-ne v2, v4, :cond_e7
+    if-ne v2, v4, :cond_e9
 
     iget v2, v10, LCPUIDSDK/a;->e:I
 
     const/4 v4, 0x1
 
-    if-ne v2, v4, :cond_e7
+    if-ne v2, v4, :cond_e9
 
     const-string v2, "Qualcomm Snapdragon 801"
 
@@ -6745,14 +6777,14 @@
 
     goto/16 :goto_2f
 
-    :cond_e7
+    :cond_e9
     const-string v2, "Qualcomm Snapdragon 800"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto :goto_30
 
-    :cond_e8
+    :cond_ea
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "405"
@@ -6761,13 +6793,13 @@
 
     move-result v2
 
-    if-eqz v2, :cond_ea
+    if-eqz v2, :cond_ec
 
     iget v2, v9, LCPUIDSDK/l;->h:I
 
     const/16 v4, 0x8
 
-    if-ne v2, v4, :cond_e9
+    if-ne v2, v4, :cond_eb
 
     const-string v2, "Qualcomm Snapdragon 615"
 
@@ -6775,14 +6807,14 @@
 
     goto/16 :goto_2f
 
-    :cond_e9
+    :cond_eb
     const-string v2, "Qualcomm Snapdragon 610"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
     goto/16 :goto_2f
 
-    :cond_ea
+    :cond_ec
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "320"
@@ -6791,11 +6823,11 @@
 
     move-result v2
 
-    if-eqz v2, :cond_ec
+    if-eqz v2, :cond_ee
 
     iget v2, v10, LCPUIDSDK/a;->c:I
 
-    if-nez v2, :cond_eb
+    if-nez v2, :cond_ed
 
     const-string v2, "Qualcomm Snapdragon S4 Pro"
 
@@ -6807,12 +6839,12 @@
 
     goto/16 :goto_2f
 
-    :cond_eb
+    :cond_ed
     iget v2, v10, LCPUIDSDK/a;->c:I
 
     const/4 v4, 0x1
 
-    if-ne v2, v4, :cond_dc
+    if-ne v2, v4, :cond_de
 
     const-string v2, "Qualcomm Snapdragon 600"
 
@@ -6828,7 +6860,7 @@
 
     goto/16 :goto_2f
 
-    :cond_ec
+    :cond_ee
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "305"
@@ -6837,7 +6869,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_ee
+    if-eqz v2, :cond_f0
 
     const-string v2, "Qualcomm Snapdragon 400"
 
@@ -6847,7 +6879,7 @@
 
     const v4, 0x192d50
 
-    if-gt v2, v4, :cond_ed
+    if-gt v2, v4, :cond_ef
 
     const-string v2, "Krait 200"
 
@@ -6855,14 +6887,14 @@
 
     goto/16 :goto_2f
 
-    :cond_ed
+    :cond_ef
     const-string v2, "Krait 300"
 
     iput-object v2, v9, LCPUIDSDK/l;->e:Ljava/lang/String;
 
     goto/16 :goto_2f
 
-    :cond_ee
+    :cond_f0
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "203"
@@ -6871,7 +6903,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_dc
+    if-eqz v2, :cond_de
 
     const-string v2, "Qualcomm Snapdragon 200"
 
@@ -6908,39 +6940,39 @@
 
     const/16 v4, 0x211
 
-    if-ne v2, v4, :cond_ef
+    if-ne v2, v4, :cond_f1
 
     iget v2, v1, LCPUIDSDK/a;->d:I
 
     const/16 v4, 0x205
 
-    if-eq v2, v4, :cond_f0
+    if-eq v2, v4, :cond_f2
 
-    :cond_ef
+    :cond_f1
     iget v2, v1, LCPUIDSDK/a;->d:I
 
     const/16 v4, 0x211
 
-    if-ne v2, v4, :cond_f1
+    if-ne v2, v4, :cond_f3
 
     iget v2, v10, LCPUIDSDK/a;->d:I
 
     const/16 v4, 0x205
 
-    if-ne v2, v4, :cond_f1
+    if-ne v2, v4, :cond_f3
 
-    :cond_f0
+    :cond_f2
     iget v2, v10, LCPUIDSDK/a;->f:I
 
     const/4 v4, 0x2
 
-    if-ne v2, v4, :cond_dc
+    if-ne v2, v4, :cond_de
 
     iget v2, v1, LCPUIDSDK/a;->f:I
 
     const/4 v4, 0x2
 
-    if-ne v2, v4, :cond_dc
+    if-ne v2, v4, :cond_de
 
     const-string v2, "Qualcomm Snapdragon 820"
 
@@ -6948,44 +6980,44 @@
 
     goto/16 :goto_2f
 
-    :cond_f1
-    iget v2, v10, LCPUIDSDK/a;->d:I
-
-    const/16 v4, 0x201
-
-    if-ne v2, v4, :cond_f2
-
-    iget v2, v1, LCPUIDSDK/a;->d:I
-
-    const/16 v4, 0x205
-
-    if-eq v2, v4, :cond_f3
-
-    :cond_f2
-    iget v2, v1, LCPUIDSDK/a;->d:I
-
-    const/16 v4, 0x201
-
-    if-ne v2, v4, :cond_dc
-
-    iget v2, v10, LCPUIDSDK/a;->d:I
-
-    const/16 v4, 0x205
-
-    if-ne v2, v4, :cond_dc
-
     :cond_f3
+    iget v2, v10, LCPUIDSDK/a;->d:I
+
+    const/16 v4, 0x201
+
+    if-ne v2, v4, :cond_f4
+
+    iget v2, v1, LCPUIDSDK/a;->d:I
+
+    const/16 v4, 0x205
+
+    if-eq v2, v4, :cond_f5
+
+    :cond_f4
+    iget v2, v1, LCPUIDSDK/a;->d:I
+
+    const/16 v4, 0x201
+
+    if-ne v2, v4, :cond_de
+
+    iget v2, v10, LCPUIDSDK/a;->d:I
+
+    const/16 v4, 0x205
+
+    if-ne v2, v4, :cond_de
+
+    :cond_f5
     iget v2, v10, LCPUIDSDK/a;->f:I
 
     const/4 v4, 0x2
 
-    if-ne v2, v4, :cond_dc
+    if-ne v2, v4, :cond_de
 
     iget v2, v1, LCPUIDSDK/a;->f:I
 
     const/4 v4, 0x2
 
-    if-ne v2, v4, :cond_dc
+    if-ne v2, v4, :cond_de
 
     const-string v2, "Qualcomm Snapdragon 821"
 
@@ -7017,7 +7049,7 @@
     goto/16 :goto_2f
 
     :sswitch_b
-    if-eqz v1, :cond_f7
+    if-eqz v1, :cond_f8
 
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
@@ -7027,7 +7059,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_f4
+    if-eqz v2, :cond_f6
 
     const-string v2, "Qualcomm Snapdragon 835"
 
@@ -7052,7 +7084,7 @@
 
     goto/16 :goto_2f
 
-    :cond_f4
+    :cond_f6
     sget-object v2, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     invoke-virtual {v3, v2}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
@@ -7065,23 +7097,8 @@
 
     move-result v2
 
-    if-nez v2, :cond_f5
+    if-eqz v2, :cond_f7
 
-    const-string v2, "sdm660"
-
-    invoke-virtual {v7, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_f5
-
-    iget v2, v10, LCPUIDSDK/a;->h:I
-
-    const v4, 0x1e8480
-
-    if-lt v2, v4, :cond_f6
-
-    :cond_f5
     const-string v2, "Qualcomm Snapdragon 660"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -7096,7 +7113,7 @@
 
     goto :goto_31
 
-    :cond_f6
+    :cond_f7
     const-string v2, "Qualcomm Snapdragon 636"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -7111,7 +7128,7 @@
 
     goto :goto_31
 
-    :cond_f7
+    :cond_f8
     const-string v2, "Qualcomm Snapdragon 630"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -7143,7 +7160,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_f8
+    if-eqz v2, :cond_f9
 
     const-string v2, "Qualcomm Snapdragon 670"
 
@@ -7168,7 +7185,7 @@
 
     goto/16 :goto_2f
 
-    :cond_f8
+    :cond_f9
     iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
 
     const-string v4, "610"
@@ -7177,7 +7194,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_f9
+    if-eqz v2, :cond_fa
 
     const-string v2, "Qualcomm Snapdragon 640"
 
@@ -7185,7 +7202,7 @@
 
     goto :goto_32
 
-    :cond_f9
+    :cond_fa
     const-string v2, "Qualcomm Snapdragon 845"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -7201,13 +7218,19 @@
 
     move-result v2
 
-    if-eqz v2, :cond_fa
+    if-eqz v2, :cond_fd
 
-    const-string v2, "Qualcomm Snapdragon 855"
+    iget v2, v10, LCPUIDSDK/a;->h:I
+
+    const v4, 0x2c4020
+
+    if-lt v2, v4, :cond_fc
+
+    const-string v2, "Qualcomm Snapdragon 855+"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
 
-    :cond_fa
+    :goto_33
     const-string v2, "Kryo 485"
 
     iput-object v2, v9, LCPUIDSDK/l;->e:Ljava/lang/String;
@@ -7216,6 +7239,8 @@
 
     iput v2, v9, LCPUIDSDK/l;->i:I
 
+    :cond_fb
+    :goto_34
     const/4 v2, 0x5
 
     iput v2, v9, LCPUIDSDK/l;->j:I
@@ -7225,6 +7250,38 @@
     iput v2, v9, LCPUIDSDK/l;->l:I
 
     goto/16 :goto_2f
+
+    :cond_fc
+    const-string v2, "Qualcomm Snapdragon 855"
+
+    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+
+    goto :goto_33
+
+    :cond_fd
+    iget-object v2, v9, LCPUIDSDK/l;->s:Ljava/lang/String;
+
+    const-string v4, "612"
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_fb
+
+    const-string v2, "Qualcomm Snapdragon 675"
+
+    iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
+
+    const-string v2, "Kryo 460"
+
+    iput-object v2, v9, LCPUIDSDK/l;->e:Ljava/lang/String;
+
+    const/16 v2, 0xb
+
+    iput v2, v9, LCPUIDSDK/l;->i:I
+
+    goto :goto_34
 
     :sswitch_e
     iget v2, v10, LCPUIDSDK/a;->d:I
@@ -7242,7 +7299,7 @@
 
     move-result v2
 
-    if-eqz v2, :cond_fb
+    if-eqz v2, :cond_fe
 
     const-string v2, "Samsung Exynos Octa 8895"
 
@@ -7256,7 +7313,7 @@
 
     iput-object v2, v10, LCPUIDSDK/a;->i:Ljava/lang/String;
 
-    :goto_33
+    :goto_35
     const/4 v2, 0x2
 
     iput v2, v9, LCPUIDSDK/l;->l:I
@@ -7267,7 +7324,7 @@
 
     goto/16 :goto_2
 
-    :cond_fb
+    :cond_fe
     const-string v2, "Samsung Exynos Octa 8890"
 
     iput-object v2, v9, LCPUIDSDK/l;->b:Ljava/lang/String;
@@ -7276,7 +7333,7 @@
 
     iput v2, v9, LCPUIDSDK/l;->i:I
 
-    goto :goto_33
+    goto :goto_35
 
     :pswitch_8
     const-string v2, "Samsung Exynos Octa 9810"
@@ -7316,7 +7373,7 @@
 
     goto/16 :goto_2
 
-    :cond_fc
+    :cond_ff
     iget-object v2, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
     const/4 v3, 0x0
@@ -7331,7 +7388,7 @@
 
     goto/16 :goto_3
 
-    :cond_fd
+    :cond_100
     iget-object v2, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
     const/4 v3, 0x1
@@ -7340,41 +7397,41 @@
 
     goto/16 :goto_3
 
-    :cond_fe
+    :cond_101
     invoke-virtual {p0, v6}, LCPUIDSDK/m;->c(I)I
 
     move-result v7
 
-    if-lez v7, :cond_101
+    if-lez v7, :cond_104
 
-    if-le v7, v5, :cond_ff
+    if-le v7, v5, :cond_102
 
     move v4, v6
 
     move v5, v7
 
-    :cond_ff
-    if-ge v7, v1, :cond_100
+    :cond_102
+    if-ge v7, v1, :cond_103
 
     move v0, v6
 
     move v1, v7
 
-    :cond_100
-    if-ge v7, v5, :cond_101
+    :cond_103
+    if-ge v7, v5, :cond_104
 
-    if-le v7, v1, :cond_101
+    if-le v7, v1, :cond_104
 
     move v2, v6
 
     move v3, v7
 
-    :cond_101
+    :cond_104
     add-int/lit8 v6, v6, 0x1
 
     goto/16 :goto_4
 
-    :cond_102
+    :cond_105
     iget-object v2, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
     const/4 v3, 0x1
@@ -7417,7 +7474,7 @@
 
     goto/16 :goto_5
 
-    :cond_103
+    :cond_106
     iget-object v2, v9, LCPUIDSDK/l;->q:[LCPUIDSDK/g;
 
     const/4 v3, 0x1
@@ -7601,7 +7658,7 @@
     :goto_0
     iget v3, p0, LCPUIDSDK/m;->a:I
 
-    if-lt v0, v3, :cond_3
+    if-lt v0, v3, :cond_1
 
     const/4 v0, 0x4
 
@@ -7619,92 +7676,16 @@
 
     move-result v1
 
-    if-nez v1, :cond_4
+    if-nez v1, :cond_2
 
     invoke-virtual {v2}, Ljava/util/Scanner;->close()V
 
     const/4 v0, 0x0
 
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1, v6}, LCPUIDSDK/CPUID;->iCPUID(II[I)I
-
-    const/4 v0, 0x0
-
-    aget v0, v6, v0
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    invoke-static {v1, v2, v6}, LCPUIDSDK/CPUID;->iCPUID(II[I)I
-
-    const/4 v1, 0x3
-
-    aget v1, v6, v1
-
-    shr-int/lit8 v1, v1, 0x1c
-
-    and-int/lit8 v1, v1, 0x1
-
-    const/4 v2, 0x1
-
-    if-ne v1, v2, :cond_0
-
-    const/4 v1, 0x0
-
-    aget-object v1, v5, v1
-
-    const/4 v2, 0x0
-
-    aget-object v2, v5, v2
-
-    const/4 v3, 0x1
-
-    aget v3, v6, v3
-
-    shr-int/lit8 v3, v3, 0x10
-
-    and-int/lit16 v3, v3, 0xff
-
-    iput v3, v2, LCPUIDSDK/p;->e:I
-
-    iput v3, v1, LCPUIDSDK/p;->f:I
-
-    :cond_0
-    const/4 v1, 0x4
-
-    if-lt v0, v1, :cond_1
-
-    const/4 v0, 0x4
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, v1, v6}, LCPUIDSDK/CPUID;->iCPUID(II[I)I
-
-    const/4 v0, 0x0
-
-    aget-object v0, v5, v0
-
-    const/4 v1, 0x0
-
-    aget v1, v6, v1
-
-    shr-int/lit8 v1, v1, 0x1a
-
-    and-int/lit8 v1, v1, 0x3f
-
-    add-int/lit8 v1, v1, 0x1
-
-    iput v1, v0, LCPUIDSDK/p;->f:I
-
-    :cond_1
-    const/4 v0, 0x0
-
     :goto_2
     iget v1, p0, LCPUIDSDK/m;->a:I
 
-    if-lt v0, v1, :cond_7
+    if-lt v0, v1, :cond_5
 
     const/4 v0, 0x0
 
@@ -7713,7 +7694,7 @@
     :goto_3
     iget v0, p0, LCPUIDSDK/m;->a:I
 
-    if-lt v1, v0, :cond_b
+    if-lt v1, v0, :cond_9
 
     iget-object v0, p0, LCPUIDSDK/m;->c:Ljava/util/ArrayList;
 
@@ -7726,7 +7707,7 @@
 
     move-result v0
 
-    if-nez v0, :cond_10
+    if-nez v0, :cond_e
 
     iget-object v0, p0, LCPUIDSDK/m;->c:Ljava/util/ArrayList;
 
@@ -7734,18 +7715,18 @@
 
     move-result-object v3
 
-    :cond_2
+    :cond_0
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-nez v0, :cond_13
+    if-nez v0, :cond_11
 
     const/4 v0, 0x1
 
     return v0
 
-    :cond_3
+    :cond_1
     new-instance v3, LCPUIDSDK/p;
 
     invoke-direct {v3}, LCPUIDSDK/p;-><init>()V
@@ -7756,7 +7737,7 @@
 
     goto :goto_0
 
-    :cond_4
+    :cond_2
     :try_start_1
     const-string v1, "processor\t:"
 
@@ -7764,7 +7745,7 @@
 
     move-result-object v1
 
-    if-eqz v1, :cond_5
+    if-eqz v1, :cond_3
 
     invoke-virtual {v2}, Ljava/util/Scanner;->next()Ljava/lang/String;
     :try_end_1
@@ -7792,7 +7773,7 @@
 
     move-object v4, v1
 
-    goto/16 :goto_1
+    goto :goto_1
 
     :catch_0
     move-exception v1
@@ -7801,14 +7782,14 @@
 
     goto :goto_5
 
-    :cond_5
+    :cond_3
     const-string v1, "apicid\t:"
 
     invoke-virtual {v2, v1}, Ljava/util/Scanner;->findInLine(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    if-eqz v1, :cond_6
+    if-eqz v1, :cond_4
 
     invoke-virtual {v2}, Ljava/util/Scanner;->next()Ljava/lang/String;
     :try_end_3
@@ -7827,7 +7808,7 @@
 
     iget v3, p0, LCPUIDSDK/m;->a:I
 
-    if-ge v0, v3, :cond_17
+    if-ge v0, v3, :cond_15
 
     aget-object v3, v5, v0
 
@@ -7847,7 +7828,7 @@
 
     goto :goto_5
 
-    :cond_6
+    :cond_4
     :try_start_5
     const-string v1, "model name\t:"
 
@@ -7855,7 +7836,7 @@
 
     move-result-object v1
 
-    if-eqz v1, :cond_17
+    if-eqz v1, :cond_15
 
     invoke-virtual {v2}, Ljava/util/Scanner;->nextLine()Ljava/lang/String;
     :try_end_5
@@ -7874,14 +7855,14 @@
 
     throw v0
 
-    :cond_7
+    :cond_5
     aget-object v1, v5, v0
 
     iget v7, v1, LCPUIDSDK/p;->c:I
 
     const/4 v1, -0x1
 
-    if-eq v7, v1, :cond_8
+    if-eq v7, v1, :cond_6
 
     const/16 v2, 0xff
 
@@ -7896,7 +7877,7 @@
 
     iget v8, v8, LCPUIDSDK/p;->e:I
 
-    if-lt v3, v8, :cond_9
+    if-lt v3, v8, :cond_7
 
     aget-object v3, v5, v0
 
@@ -7929,7 +7910,7 @@
     const/4 v3, 0x1
 
     :goto_7
-    if-lt v3, v8, :cond_a
+    if-lt v3, v8, :cond_8
 
     aget-object v3, v5, v0
 
@@ -7945,12 +7926,12 @@
 
     iput v1, v2, LCPUIDSDK/p;->d:I
 
-    :cond_8
+    :cond_6
     add-int/lit8 v0, v0, 0x1
 
     goto/16 :goto_2
 
-    :cond_9
+    :cond_7
     shl-int/lit8 v2, v2, 0x1
 
     int-to-char v2, v2
@@ -7963,7 +7944,7 @@
 
     goto :goto_6
 
-    :cond_a
+    :cond_8
     shl-int/lit8 v2, v2, 0x1
 
     int-to-char v2, v2
@@ -7976,8 +7957,8 @@
 
     goto :goto_7
 
-    :cond_b
-    if-nez v1, :cond_d
+    :cond_9
+    if-nez v1, :cond_b
 
     new-instance v0, LCPUIDSDK/l;
 
@@ -8001,7 +7982,7 @@
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_c
+    :cond_a
     :goto_8
     add-int/lit8 v0, v1, 0x1
 
@@ -8009,7 +7990,7 @@
 
     goto/16 :goto_3
 
-    :cond_d
+    :cond_b
     const/4 v0, 0x0
 
     iget-object v2, p0, LCPUIDSDK/m;->c:Ljava/util/ArrayList;
@@ -8020,15 +8001,15 @@
 
     move v2, v0
 
-    :cond_e
+    :cond_c
     :goto_9
     invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
-    if-nez v0, :cond_f
+    if-nez v0, :cond_d
 
-    if-nez v2, :cond_c
+    if-nez v2, :cond_a
 
     new-instance v0, LCPUIDSDK/l;
 
@@ -8054,7 +8035,7 @@
 
     goto :goto_8
 
-    :cond_f
+    :cond_d
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -8067,7 +8048,7 @@
 
     iget v7, v7, LCPUIDSDK/p;->a:I
 
-    if-ne v0, v7, :cond_e
+    if-ne v0, v7, :cond_c
 
     const/4 v0, 0x1
 
@@ -8075,7 +8056,7 @@
 
     goto :goto_9
 
-    :cond_10
+    :cond_e
     invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -8099,7 +8080,7 @@
     :goto_a
     iget v7, p0, LCPUIDSDK/m;->a:I
 
-    if-lt v1, v7, :cond_11
+    if-lt v1, v7, :cond_f
 
     const/4 v1, 0x0
 
@@ -8137,14 +8118,14 @@
 
     goto/16 :goto_4
 
-    :cond_11
+    :cond_f
     aget-object v7, v5, v1
 
     iget v7, v7, LCPUIDSDK/p;->a:I
 
     iget v8, v0, LCPUIDSDK/l;->g:I
 
-    if-ne v7, v8, :cond_12
+    if-ne v7, v8, :cond_10
 
     iget-object v7, v3, LCPUIDSDK/q;->k:Ljava/util/ArrayList;
 
@@ -8158,12 +8139,12 @@
 
     iput v7, v3, LCPUIDSDK/q;->e:I
 
-    :cond_12
+    :cond_10
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_a
 
-    :cond_13
+    :cond_11
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -8184,13 +8165,13 @@
 
     move-result-object v5
 
-    :cond_14
+    :cond_12
     :goto_b
     invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    if-nez v2, :cond_16
+    if-nez v2, :cond_14
 
     iput-object v4, v0, LCPUIDSDK/l;->a:Ljava/lang/String;
 
@@ -8316,7 +8297,7 @@
 
     and-int/lit8 v5, v5, 0x1f
 
-    if-eqz v5, :cond_2
+    if-eqz v5, :cond_0
 
     const/4 v5, 0x0
 
@@ -8388,18 +8369,18 @@
 
     move-result-object v5
 
-    if-eqz v5, :cond_15
+    if-eqz v5, :cond_13
 
     iget-object v7, v0, LCPUIDSDK/l;->w:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    :cond_15
+    :cond_13
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_d
 
-    :cond_16
+    :cond_14
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -8408,7 +8389,7 @@
 
     iget v2, v2, LCPUIDSDK/p;->d:I
 
-    if-nez v2, :cond_14
+    if-nez v2, :cond_12
 
     iget v2, v1, LCPUIDSDK/g;->f:I
 
@@ -8526,10 +8507,12 @@
 
     goto/16 :goto_c
 
-    :cond_17
+    :cond_15
     move-object v1, v4
 
     goto/16 :goto_5
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x6
@@ -8742,57 +8725,46 @@
 .end method
 
 .method private m()Z
-    .locals 3
+    .locals 2
 
-    sget-object v1, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
+    sget-object v0, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
-    const/4 v0, 0x1
+    iget-object v1, p0, LCPUIDSDK/m;->c:Ljava/util/ArrayList;
 
-    iget-object v2, p0, LCPUIDSDK/m;->c:Ljava/util/ArrayList;
+    invoke-virtual {v1}, Ljava/util/ArrayList;->clear()V
 
-    invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
+    const-string v1, "x86"
 
-    const-string v2, "armeabi"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-direct {p0}, LCPUIDSDK/m;->j()Z
-
-    move-result v0
-
-    :cond_0
-    :goto_0
-    return v0
-
-    :cond_1
-    const-string v2, "x86"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-direct {p0}, LCPUIDSDK/m;->k()Z
-
-    move-result v0
-
-    goto :goto_0
-
-    :cond_2
-    const-string v2, "mips"
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
+    invoke-direct {p0}, LCPUIDSDK/m;->k()Z
+
+    move-result v0
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const-string v1, "mips"
+
+    invoke-virtual {v0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
     invoke-direct {p0}, LCPUIDSDK/m;->l()Z
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_1
+    invoke-direct {p0}, LCPUIDSDK/m;->j()Z
 
     move-result v0
 
