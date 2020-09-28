@@ -287,38 +287,6 @@
 
     if-lt v0, v1, :cond_0
 
-    new-instance v0, Lcom/google/android/gms/ads/k;
-
-    invoke-direct {v0, p0}, Lcom/google/android/gms/ads/k;-><init>(Landroid/content/Context;)V
-
-    iput-object v0, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
-
-    iget-object v0, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
-
-    const-string v1, "ca-app-pub-1350675259325763/1939313434"
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/k;->a(Ljava/lang/String;)V
-
-    iget-object v0, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
-
-    new-instance v1, Lcom/google/android/gms/ads/f;
-
-    invoke-direct {v1}, Lcom/google/android/gms/ads/f;-><init>()V
-
-    invoke-virtual {v1}, Lcom/google/android/gms/ads/f;->a()Lcom/google/android/gms/ads/d;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/k;->a(Lcom/google/android/gms/ads/d;)V
-
-    iget-object v0, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
-
-    new-instance v1, Lcom/cpuid/cpu_z/d;
-
-    invoke-direct {v1, p0}, Lcom/cpuid/cpu_z/d;-><init>(Lcom/cpuid/cpu_z/MainActivity;)V
-
-    invoke-virtual {v0, v1}, Lcom/google/android/gms/ads/k;->a(Lcom/google/android/gms/ads/a;)V
-
     goto :goto_0
 .end method
 
@@ -364,12 +332,6 @@
     cmp-long v2, v0, v2
 
     if-lez v2, :cond_0
-
-    iget-object v2, p0, Lcom/cpuid/cpu_z/MainActivity;->w:Lcom/google/android/gms/ads/k;
-
-    invoke-virtual {v2}, Lcom/google/android/gms/ads/k;->b()V
-
-    iput-wide v0, p0, Lcom/cpuid/cpu_z/MainActivity;->x:J
 
     :cond_0
     return-void
